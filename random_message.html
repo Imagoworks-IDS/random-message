@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Message Typeform</title>
+    <script>
+        const messages = [
+            "Less effort, More precision. Today is all yours. Savor a ‘Cosmopolitan’ at the bar!",
+            "Less chaos, More focus. Today is refreshing. Enjoy a ‘Pina Colada’ at the bar!",
+            "Less stress, More joy. Today is a treat. Grab a ‘Mojito’ at the bar!"
+        ];
+        
+        function getRandomMessage() {
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            return messages[randomIndex];
+        }
+        
+        window.onload = function() {
+            const randomMessage = getRandomMessage();
+            document.getElementById("random-message").innerText = randomMessage;
+        };
+    </script>
+</head>
+<body>
+    <h1 id="random-message"></h1>
+    <iframe src="https://xbs53lc7vbx.typeform.com/to/ukDSrFmk" width="100%" height="500" frameborder="0"></iframe>
+</body>
+</html>
